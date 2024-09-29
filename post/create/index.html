@@ -3,14 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noroff FED2 JS2 CA</title>
+    <title>Create Post</title>
     <script type="module" src="/src/app.js"></script>
   </head>
   <body>
-    <h1>Create Post</h1>
+     <!-- Header Section -->
+     <header class="site-header">
+      <a href="/">
+          <a href="/">
+              <img src="/images/piclia-logo.svg" alt="Logo" class="logo">
+          </a>
+      </div>
+  </header>
+  <!-- Main section -->
+   <main>
+    <h1 class="text-center">Create Post</h1>
 
     <form name="createPost">
-      <button>Create Post</button>
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required maxlength="20" placeholder="Enter the title of your post">
+      </div>
+
+      <div>
+        <label for="body">Body</label>
+        <textarea id="body" name="body" required placeholder="Enter the content of your post"></textarea>
+      </div>
+
+      <div>
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" name="tags" placeholder="Enter tags separated by commas">
+      </div>
+
+      <div>
+        <label for="media">Media URL</label>
+        <input type="url" id="media" name="media" required placeholder="Enter the URL of the media">
+      </div>
+
+      <div>
+        <label for="alt">Media Alt Text</label>
+        <input type="text" id="alt" name="alt" placeholder="Describe the media" maxlength="100">
+      </div>
+
+      <button type="submit">Create Post</button>
     </form>
+   </main>
   </body>
 </html>
